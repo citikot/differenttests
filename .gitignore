@@ -4,13 +4,7 @@
 .idea
 /target
 /backend/target
-frontend/node_modules
 *.iml
-/node_modules
-node/*
-/node/*
-
-
 .classpath
 .project
 .settings/
@@ -19,21 +13,7 @@ application-local.properties
 application-gamma.properties
 logback-local.xml
 
-fonts.jar
-
-/frontend/dist
-/frontend/src/js/out
-/frontend/src/assets/out
-/frontend/src/app/assets/out
-/backend/src/main/resources/static
-node_modules
-application-kristaps*.properties
-
 .attach_pid*
 
 .DS_Store
 .vscode/
-/src/main/resources/static/resources/js_old
-/src/main/resources/static/assets/*
-/src/main/resources/static/app/assets/*
-/src/main/resources/templates/index.html
