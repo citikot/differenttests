@@ -1,4 +1,4 @@
-package onlline.agatstudio.objectmapperjson.demo;
+package online.agatstudio.objectmapperjson;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
