@@ -9,11 +9,12 @@ public class DateRangeExample {
         LocalDate date = LocalDate.now();
 
         // Вычисляем начало дня (00:00:00) и переводим в Unix timestamp (в секундах)
-        long startOfDay = date.atStartOfDay(ZoneId.systemDefault()).toEpochSecond() * 1000;
+        long startOfDay = date.atStartOfDay(ZoneId.systemDefault()).toInstant().toEpochMilli();
 
         // Вычисляем начало следующего дня, что соответствует концу текущего дня
-        long endOfDay = date.plusDays(1).atStartOfDay(ZoneId.systemDefault()).toEpochSecond() * 1000;
+        long endOfDay = date.plusDays(1).atStartOfDay(ZoneId.systemDefault()).toInstant().toEpochMilli();;
 
+        System.out.println("Today: " + date);
         System.out.println("Start of day: " + startOfDay);
         System.out.println("End of day: " + endOfDay);
     }
